@@ -1,0 +1,90 @@
+#country-select {
+    padding: 0.5rem;
+}
+#country-select:focus-visible {
+    outline: 0;
+}
+.card-stage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.8rem 0;
+}
+.country-card {
+    padding: 0rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 19%;
+    margin-right: 1%;
+    margin-bottom: 1rem;
+}
+.country-card p {
+    margin: 0;
+}
+.country-card__title {
+    background: black;
+    color: white;
+    display: block;
+    padding: 0.2rem 0.6rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-weight: bold;
+}
+.country-card__content {
+    padding: 0.6rem;
+    display: flex;
+    font-size: 0.95rem;
+}
+.country-card__col-left {
+    width: 75%;
+}
+.country-card__col-right {
+    width: 23%;
+    margin-left: 2%;
+}
+.country-card__col-right img {
+    width: 100%;
+    height: auto;
+}
+.modal {
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.modal--active {
+    display: block;
+    z-index: 99999;
+}
+.modal__content {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.modal__inner {
+    background: white;
+    position: fixed;
+    padding-top: 0;
+    width: 90%;
+    max-width: 770px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.modal__close {
+    right: 0.9rem;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    top: 0.5rem;
+}
+.modal__title {
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 0.5rem;
+}
